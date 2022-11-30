@@ -49,8 +49,16 @@ const nuggets2 = 2;
 
 if(hamburger2 || cola || fries === 3 || nuggets2) {
     console.loge("Done!");
-}// done
+}// cona in not undefined 
 
+let hamburger3;
+const fries3 = NaN;
+const cola3 = 0;
+const nuggets3 = 2;
+
+if (hamburger3 && cola || fries === 3 && nuggets) {
+    console.log("done!");
+}// cola is not udefined
 
 
 
