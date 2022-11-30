@@ -1,25 +1,19 @@
 "use strict"; // strict mode for spelling code
-/*
-const obj = {
-    name: "Vasilii",
-    age : 25,
-};
+let dataFromUser = prompt(['How much movies did you watch ?'] );
+let dataFromUserKindOfMuvie = prompt(['What was last movie you seen ?']);
+let dataFromUserRateMovie = prompt(['Rate the last movie from 1 star to 5.']);
 
-console.log(obj.name);
-
-obj.vacantion = "01 february";
-console.log(obj.vacantion);
-
-
-let storeName = "enter";
-const storeDescription = {
-    budget : 10000,
-    employees : ['Ann', 'Rick', 'Cris'],
-    products : {
-        iphone8 : 5000,
-        ipone13Mini : 18000,
+const personalMovieDB = {
+    count : dataFromUser,
+    movies : {
+        frequencyOfWhatchingMovie : dataFromUser,
+        kindeOfMovie : dataFromUserKindOfMuvie,
+        rate : dataFromUserRateMovie,
     },
-    open : true,
-};*/
+    actors : '',
+    genres : '',
+    privat : false,
+ };
 
-alert("hello");
+
+
