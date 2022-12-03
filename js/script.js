@@ -60,6 +60,20 @@ if (hamburger3 && cola || fries === 3 && nuggets) {
     console.log("done!");
 }// cola is not udefined
 
+// loops
 
+let nuberStar = 10;
+let stringStar = "";
+
+for ( let i = 0; i <= nuberStar; i++) {
+ 
+    for ( let star = 0; star <= i; star++) {
+        stringStar += "*";
+    }
+    stringStar += "\n";
+    
+}
+
+console.log(stringStar);
 
 
