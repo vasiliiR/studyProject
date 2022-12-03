@@ -76,4 +76,64 @@ for ( let i = 0; i <= nuberStar; i++) {
 
 console.log(stringStar);
 
+for (let i = 0; i <= 10; i++){
+    let res = i % 2 === 0; 
+    if (res) {
+        console.log(i);
+    }else {
+        continue;
+    }
+}
 
+
+
+    for( let i = 20; i > 9; i-- ) {
+        console.log(i);
+        if ( i == 13) {
+            break;
+        }
+        
+    }
+
+    for (let i = 0; i <= 10; i++){
+        let res = i % 2 === 0; 
+        if (res) {
+            console.log(i);
+        }else {
+            continue;
+        }
+    }
+
+
+    for (let i = 2; i <= 16; i++) {
+        if (i % 2 === 0) {
+            continue;
+        } else {
+            console.log(i);
+        }
+    }
+
+    let i = 2;
+while ( i < 16 ) {
+    i++;
+    if (i % 2 === 0) {
+        continue;
+    }else {
+        console.log(i++);
+    }
+}
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+    for (let i = 5; i <= 10; i++){
+        for ( let k = 0; k <= 5; k++) {
+            arrayOfNumbers[k] = i++; 
+        }
+       
+    }
+    // Пишем решение вот тут
+    
+    
+    // Не трогаем
+    return arrayOfNumbers;
+}
