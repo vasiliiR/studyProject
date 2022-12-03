@@ -137,3 +137,22 @@ function fifthTask() {
     // Не трогаем
     return arrayOfNumbers;
 }
+/*
+Заполните новый массив (result) числами из старого (arr). Количество элементов в массиве можно получить как arr.length, а к элементам обращаемся все так же: arr[0], arr[1] и тд.
+*/
+
+function firstTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
+    for (let i = 0; i <= arr.length; i++) {
+    for (let k = 0;  k <= arr.length; k++) {
+        result[k] = arr[i];
+    }
+}
+    // Пишем решение вот тут
+    
+    
+    // Не трогаем
+    return result;
+}
