@@ -22,7 +22,7 @@ const personalMovieDB = {
  console.log(personalMovieDB.movies.rate);
 
 
- /* logical operation task 2 practise*/
+ //logical operation task 2 practise
 
 console.log(NaN || 2 || undefined); // true 2
 console.log(NaN && 2  && undefined); // false undefined
@@ -137,9 +137,9 @@ function fifthTask() {
     // Не трогаем
     return arrayOfNumbers;
 }
-/*
-Заполните новый массив (result) числами из старого (arr). Количество элементов в массиве можно получить как arr.length, а к элементам обращаемся все так же: arr[0], arr[1] и тд.
-*/
+
+//Заполните новый массив (result) числами из старого (arr). Количество ;
+
 
 function firstTask() {
     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
@@ -155,4 +155,42 @@ function firstTask() {
     
     // Не трогаем
     return result;
+}
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+for (let i = 0; i <= arr.length - 1; i++) {
+    result[i] = arr[i];
+}
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+for (let i = 0; i <= data.length -1; i++) {
+    
+    if (typeof (data[i]) === 'number') {
+        data[i] *= 2;   
+       console.log(data[i]);
+    } else if (typeof (data[i]) === 'string'){
+        data[i] += " - done";
+       console.log(data[i]);
+    }
+
+}
+
+
+const ddata = [5, 10, 'Shopping', 20, 'Homework'];
+for( let test = 0; test <= ddata.length - 1; test++) {
+    console.log( typeof (ddata[test]));
+}
+
+const daata = [5, 10, 'Shopping', 20, 'Homework'];
+const reesult = [];
+for (let i = daata.length - 1; i >= 0; i--) {
+    reesult[i] = daata[i];
+}
+
+
+const daaata = [5, 10, 'Shopping', 20, 'Homework'];
+const reasult = [];
+for (let i = data.length -1; i >= 0; i--) {
+    result[i] = data[i];
 }
