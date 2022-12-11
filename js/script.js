@@ -1,4 +1,5 @@
 "use strict"; // strict mode for spelling code
+/*
 
 let dataFromUser = prompt(['How much movies did you watch ?'] );
 let dataFromUserKindOfMuvie = prompt(['What was last movie you seen ?']);
@@ -191,6 +192,20 @@ for (let i = daata.length - 1; i >= 0; i--) {
 
 const daaata = [5, 10, 'Shopping', 20, 'Homework'];
 const reasult = [];
-for (let i = data.length -1; i >= 0; i--) {
-    result[i] = data[i];
+for (let i = daaata.length - 1; i >= 0; i--) {
+     
+     
 }
+*/
+
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines.length; i++){
+
+    for(let star = 0; star <= 10; star++) {
+        console.log();
+    }
+}
+
+//essoy about and of the year 
