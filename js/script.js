@@ -196,7 +196,7 @@ for (let i = daaata.length - 1; i >= 0; i--) {
      
      
 }
-*/
+
 
 const lines = 5;
 let result = '';
@@ -207,5 +207,72 @@ for (let i = 0; i <= lines.length; i++){
         console.log();
     }
 }
+*/
+// questions about movie 
 
-//essoy about and of the year 
+
+
+let dataFromUser = prompt(['How much movies did you watch ?']);
+let dataFromUserKindOfMuvie = prompt(['What was last movie you seen ?']);
+let dataFromUserRateMovie = prompt(['Rate the last movie from 1 star to 5.']);
+
+
+if (dataFromUser.length <= 50 || dataFromUserKindOfMuvie.length <= 50 || dataFromUserRateMovie.length <= 50) {
+    while (dataFromUser === '' || dataFromUserKindOfMuvie === '' || dataFromUserRateMovie == '') {
+
+        if (dataFromUser === '' || dataFromUserKindOfMuvie === '' || dataFromUserRateMovie == '') {
+
+            switch ('') {
+
+                case dataFromUser: alert('Answer to this uestion "How much movies did you watch ?"');
+                    dataFromUser = prompt(['How much movies did you watch ?']);
+                    continue;
+
+                case dataFromUserKindOfMuvie: alert('Answer to this uestion "What was last movie you seen ?" please');
+                    dataFromUserKindOfMuvie = prompt(['What was last movie you seen ?']);
+                    continue;
+
+
+                case dataFromUserRateMovie: alert('Rate whached move please.');
+                    dataFromUserRateMovie = prompt(['Rate the last movie from 1 star to 5.']);
+                    continue;
+
+                default:
+                    alert("You did not answered to questions , please answer to it");
+
+            }
+
+        }
+
+        continue;
+    }
+
+} else {
+    alert('You can  write maximum 50 symbols');
+     dataFromUser = prompt(['How much movies did you watch ?']);
+ dataFromUserKindOfMuvie = prompt(['What was last movie you seen ?']);
+ dataFromUserRateMovie = prompt(['Rate the last movie from 1 star to 5.']);
+}
+
+const personalMovieDB = {
+    count: dataFromUser,
+    movies: {
+        frequencyOfWhatchingMovie: dataFromUser,
+        kindeOfMovie: dataFromUserKindOfMuvie,
+        rate: dataFromUserRateMovie,
+    },
+    actors: {},
+    genres: [],
+    privat: false,
+};
+
+
+if (personalMovieDB.count <= 10) {
+    alert("You whached not more muvies");
+} else if (personalMovieDB.count >=11 && personalMovieDB.count <=30) {
+    alert("You are awsome user");
+}else if ( personalMovieDB.count >=31 ) {
+    alert("You are best");
+}else {
+    alert("error");
+}
